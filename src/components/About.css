@@ -1,0 +1,116 @@
+/* src/components/About.css */
+
+/* ── Shared section layout ── */
+.section {
+  padding: 6rem 2rem;
+  position: relative;
+}
+.section__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+.section--alt { background: var(--bg-card); }
+
+/* ── About ── */
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+.about__left .section-title em {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--accent);
+}
+.about__text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+}
+.about__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.about__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid rgba(79,195,247,0.2);
+  padding: 0.45rem 1rem;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+.about__link:hover {
+  background: var(--accent-glow);
+  border-color: var(--accent);
+}
+
+.about__highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.about__highlight-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.about__highlight-card:hover {
+  border-color: var(--border-blue);
+  transform: translateY(-2px);
+}
+.about__highlight-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+.about__highlight-value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+.about__highlight-label {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.about__lang-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+.about__lang-title {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+}
+.about__lang-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .about__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+}

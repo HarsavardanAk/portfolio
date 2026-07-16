@@ -1,0 +1,70 @@
+/* src/components/Skills.css */
+.skills__intro {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 560px;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+.skill-group {
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.skill-group:hover {
+  border-color: var(--border-blue);
+  transform: translateY(-3px);
+}
+.skill-group__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.skill-group__icon { font-size: 1.4rem; }
+.skill-group__name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.skill-group__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.skill-pill {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.7rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+.skill-group:hover .skill-pill {
+  border-color: rgba(79,195,247,0.15);
+  color: var(--text);
+}
+
+@media (max-width: 1100px) {
+  .skills__grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 900px) {
+  .skills__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .skills__grid { grid-template-columns: 1fr; }
+}
