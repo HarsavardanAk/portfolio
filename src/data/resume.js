@@ -132,44 +132,109 @@ const resume = {
     },
   ],
 
-  skills: [
-    {
-      category: "Mobile Development",
-      icon: "📱",
-      items: ["Flutter", "Dart", "Android Studio", "Cross-Platform"],
-    },
-    {
-      category: "Frontend & Web",
-      icon: "🌐",
-      items: ["React", "JavaScript", , "Java","HTML5", "CSS3", "Bootstrap", "PHP"],
-    },
-    {
-      category: "Backend & APIs",
-      icon: "⚙️",
-      items: ["Node.js", "Python", "NetSuite APIs", "MVC Architecture"],
-    },
-    {
-      category: "ERP Integration",
-      icon: "🔗",
-      items: ["NetSuite ERP", "Orders", "Invoices", "Payments", "Procurement", "Customer Records"],
-    },
-    {
-      category: "Security",
-      icon: "🔒",
-      items: ["AES-256 Encryption", "Face Recognition", "OpenCV"],
-    },
-  
-    {
-      category: "Databases",
-      icon: "🗄️",
-      items: ["MySQL", "MongoDB"],
-    },
-    {
-      category: "Tools & Practices",
-      icon: "🛠️",
-      items: ["Git", "VS Code", "Postman", "Technical Documentation"],
-    },
-  ],
+ skills: [
+  {
+    category: "Mobile Development",
+    icon: "📱",
+    items: [
+      "Flutter",
+      "Dart",
+      "Cross-Platform Development",
+      "Responsive UI Design",
+      "Material Design",
+      "Desktop Applications"
+    ],
+  },
+  {
+    category: "State Management",
+    icon: "⚡",
+    items: [
+      "GetX",
+      "BLoC",
+      "Provider",
+      "MVVM Architecture",
+      "Reactive Programming"
+    ],
+  },
+  {
+    category: "Backend & APIs",
+    icon: "🔗",
+    items: [
+      "REST APIs",
+      "NetSuite ERP Integration",
+      "JSON Parsing",
+      "HTTP Client",
+      "API Integration"
+    ],
+  },
+  {
+    category: "Firebase & Storage",
+    icon: "🔥",
+    items: [
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "Firebase Storage",
+      "SharedPreferences",
+      "Local JSON Cache"
+    ],
+  },
+  {
+    category: "Programming Languages",
+    icon: "💻",
+    items: [
+      "Dart",
+      "Java",
+      "JavaScript",
+      "Python",
+      "PHP"
+    ],
+  },
+  {
+    category: "Web Technologies",
+    icon: "🌐",
+    items: [
+      "React",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Responsive Web Design"
+    ],
+  },
+  {
+    category: "Databases",
+    icon: "🗄️",
+    items: [
+      "SQLite",
+      "MySQL",
+      "MongoDB",
+      "Cloud Firestore"
+    ],
+  },
+  {
+    category: "Tools & Version Control",
+    icon: "🛠️",
+    items: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Android Studio",
+      "Postman",
+      "Figma"
+    ],
+  },
+  {
+    category: "Software Engineering",
+    icon: "🚀",
+    items: [
+      "Clean Architecture",
+      "MVC",
+      "MVVM",
+      "Offline-First Applications",
+      "Agile Development",
+      "Technical Documentation"
+    ],
+  },
+],
 
   education: [
     {
@@ -177,14 +242,14 @@ const resume = {
       institution: "University College of Engineering, BIT Campus",
       location: "Tiruchirappalli",
       period: "2023 – 2025",
-      cgpa: "7.9 / 10",
+      cgpa: "8.2 / 10",
     },
     {
       degree: "Bachelor of Science in Computer Science",
       institution: "Subbalakshmi Lakshmipathy College of Science",
       location: "Madurai",
       period: "2020 – 2023",
-      cgpa: "7.9 / 10",
+      cgpa: "8.3 / 10",
     },
   ],
 

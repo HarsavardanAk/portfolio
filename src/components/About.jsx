@@ -4,10 +4,10 @@ import "./About.css";
 
 export default function About() {
   const highlights = [
-    { icon: "📱", label: "Mobile Apps",      value: "Cross-platform" },
-    { icon: "🔗", label: "ERP Integration",  value: "NetSuite Expert" },
-    { icon: "🔒", label: "Security",         value: "AES-256 / SSL" },
-    { icon: "🤖", label: "AI Features",      value: "Smart Suggestions" },
+   { icon: "📱", label: "Flutter Development", value: "Mobile & Desktop Apps" },
+{ icon: "⚙️", label: "State Management",   value: "GetX • BLoC • Provider" },
+{ icon: "🔗", label: "API & ERP",          value: "REST APIs • NetSuite" },
+{ icon: "☁️", label: "Backend Services",   value: "Firebase Integration" },
   ];
 
   return (

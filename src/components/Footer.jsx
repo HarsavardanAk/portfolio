@@ -6,41 +6,109 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__inner">
+
+        {/* Left */}
+
         <div className="footer__left">
+
           <div className="footer__brand">
             <span className="footer__initials">HV</span>
-            <span className="footer__name">Harsa Vardan A K</span>
+
+            <div>
+              <h3 className="footer__name">
+                Harsa Vardan A K
+              </h3>
+
+              <p className="footer__role">
+                Flutter Developer
+              </p>
+            </div>
           </div>
-          <p className="footer__role">{resume.title}</p>
+
+          <p className="footer__description">
+            Passionate about developing scalable Flutter applications,
+            seamless REST API integrations, and intuitive user experiences
+            for mobile and desktop platforms.
+          </p>
+
         </div>
 
-        <div className="footer__links">
-          {["#about","#experience","#projects","#skills","#education","#contact"].map(h => (
-            <a key={h} href={h} className="footer__link">
-              {h.replace("#","")}
-            </a>
-          ))}
+        {/* Center */}
+
+        <div className="footer__center">
+
+          <h4>Quick Links</h4>
+
+          <div className="footer__links">
+            {[
+              "#about",
+              "#experience",
+              "#projects",
+              "#skills",
+              "#education",
+              "#contact",
+            ].map((h) => (
+              <a key={h} href={h} className="footer__link">
+                {h.replace("#", "")}
+              </a>
+            ))}
+          </div>
+
         </div>
+
+        {/* Right */}
 
         <div className="footer__right">
-          <a href={resume.linkedinUrl} target="_blank" rel="noreferrer" className="footer__social">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
-              <circle cx="4" cy="4" r="2"/>
-            </svg>
+
+          <h4>Connect</h4>
+
+          <div className="footer__socials">
+
+            <a
+              href={resume.linkedinUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="footer__social"
+            >
+              LinkedIn
+            </a>
+
+            {resume.githubUrl && (
+              <a
+                href={resume.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="footer__social"
+              >
+                GitHub
+              </a>
+            )}
+
+            <a
+              href={`mailto:${resume.email}`}
+              className="footer__social"
+            >
+              Email
+            </a>
+
+          </div>
+
+          <a href="#hero" className="footer__top">
+            ↑ Back to Top
           </a>
-          <a href={`mailto:${resume.email}`} className="footer__social">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <rect x="2" y="4" width="20" height="16" rx="2"/>
-              <path d="M22 4l-10 9L2 4"/>
-            </svg>
-          </a>
+
         </div>
+
       </div>
 
       <div className="footer__bottom">
-        <span>© {new Date().getFullYear()} Harsa Vardan A K · All rights reserved</span>
-        <span>Built with React</span>
+
+        <span>
+          © {new Date().getFullYear()} Harsa Vardan A K. All Rights Reserved.
+        </span>
+
+        
+
       </div>
     </footer>
   );

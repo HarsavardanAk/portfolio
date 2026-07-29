@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import resume from "../data/resume";
 import "./Hero.css";
+import profileImage from "../assets/profile.jpg";
 
 export default function Hero() {
   const canvasRef = useRef(null);
@@ -70,7 +71,7 @@ export default function Hero() {
   const stats = [
     { value: "1+",  label: "Years Experience" },
     { value: "4+",  label: "Projects Shipped" },
-    { value: "99.5%", label: "Uptime Delivered" },
+    { value: "10+", label: "Tools & Technologies" },
     { value: "3",   label: "Enterprise Clients" },
   ];
 
@@ -120,19 +121,25 @@ export default function Hero() {
           <div className="hero__card">
             <div className="hero__avatar">
               <div className="hero__avatar-ring" />
-              <div className="hero__avatar-inner">
-                <span className="hero__avatar-initials">HV</span>
-              </div>
+             <div className="hero__avatar-inner">
+  <img
+    src={profileImage}
+    alt="Harsa Vardan A K"
+    className="hero__avatar-image"
+  />
+</div>
             </div>
-            <div className="hero__card-badge">
-              <span>📱</span> Mobile Dev
-            </div>
-            <div className="hero__card-badge hero__card-badge--2">
-              <span>🔗</span> NetSuite ERP
-            </div>
-            <div className="hero__card-badge hero__card-badge--3">
-              <span>🔒</span> AES-256
-            </div>
+           <div className="hero__card-badge">
+  <span>📱</span> Application Developer
+</div>
+
+<div className="hero__card-badge hero__card-badge--2">
+  <span>⚡</span> GetX • BLoC • Provider  
+</div>
+
+<div className="hero__card-badge hero__card-badge--3">
+  <span>🔗</span> REST APIs • NetSuite
+</div>
           </div>
         </div>
       </div>

@@ -1,8 +1,35 @@
 // src/components/Contact.jsx
 import resume from "../data/resume";
 import "./Contact.css";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { useEffect } from "react";
 
 export default function Contact() {
+  const form = useRef();
+
+
+useEffect(() => {
+  emailjs.init("0vfRq1RVOMhKO_NhK");
+}, []);
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_zm6eqcu",
+      "template_o2tpso8",
+      form.current
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+      form.current.reset();
+    })
+    .catch((error) => {
+      console.log(error);
+      alert(error.text);
+    });
+};
   const items = [
     {
       icon: (
@@ -46,34 +73,88 @@ export default function Contact() {
     <section id="contact" className="contact section section--alt">
       <div className="section__inner">
         <div className="contact__grid">
-          <div className="contact__left">
-            <p className="section-label">Get In Touch</p>
-            <h2 className="section-title">Let's Work<br /><em>Together</em></h2>
-            <p className="contact__text">
-              I'm currently open to new opportunities. Whether you have a project, a question, or just want to connect — my inbox is always open.
-            </p>
-            <a href={`mailto:${resume.email}`} className="btn btn--primary contact__cta">
-              Send a Message →
-            </a>
-          </div>
+        <div className="contact__left">
+  <p className="section-label">Get In Touch</p>
 
-          <div className="contact__right">
-            {items.map((item, i) => (
-              <div key={i} className="contact__item">
-                <div className="contact__icon">{item.icon}</div>
-                <div className="contact__item-body">
-                  <span className="contact__item-label">{item.label}</span>
-                  {item.href ? (
-                    <a href={item.href} target={item.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" className="contact__item-value contact__item-value--link">
-                      {item.value}
-                    </a>
-                  ) : (
-                    <span className="contact__item-value">{item.value}</span>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
+  <h2 className="section-title">
+    Let's Build <br />
+    <em>Something Great</em>
+  </h2>
+
+  <p className="contact__text">
+    Thank you for visiting my portfolio. I'm a Flutter Developer passionate
+    about building high-performance mobile and desktop applications with
+    clean architecture, intuitive user experiences, and seamless API
+    integrations.
+  </p>
+
+  <p className="contact__text">
+    Whether you're looking for a Flutter Developer, need assistance with an
+    existing project, or would like to discuss a new opportunity, I'd be
+    happy to connect. Feel free to use the contact form, and I'll respond as
+    soon as possible.
+  </p>
+
+  <div className="contact__availability">
+    <span className="contact__status"></span>
+    <span>Available for Full-Time Opportunities & Freelance Projects</span>
+  </div>
+</div>
+
+       <div className="contact__right">
+
+<form
+    ref={form}
+    onSubmit={sendEmail}
+    className="contact__form"
+>
+
+<div className="form__group">
+<input
+type="text"
+name="user_name"
+placeholder="Your Name"
+required
+/>
+</div>
+
+<div className="form__group">
+<input
+type="email"
+name="user_email"
+placeholder="Your Email"
+required
+/>
+</div>
+
+<div className="form__group">
+<input
+type="text"
+name="subject"
+placeholder="Subject"
+required
+/>
+</div>
+
+<div className="form__group">
+<textarea
+name="message"
+rows="6"
+placeholder="Write your message..."
+required
+/>
+</div>
+
+<button
+type="submit"
+className="btn btn--primary contact__cta"
+>
+Send Message →
+</button>
+
+</form>
+
+</div>
         </div>
       </div>
     </section>

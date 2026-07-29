@@ -52,9 +52,13 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a href="mailto:harsavardanharsa@gmail.com" className="navbar__cta">
-          Hire Me
-        </a>
+        <a
+  href="#contact"
+  className="navbar__cta"
+  onClick={() => setMenuOpen(false)}
+>
+  Hire Me
+</a>
 
         <button className={`navbar__burger ${menuOpen ? "open" : ""}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
           <span /><span /><span />
