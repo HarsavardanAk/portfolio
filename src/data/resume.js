@@ -23,6 +23,7 @@ const resume = {
         "Implement end-to-end security using AES-256 encryption and SSL/TLS, ensuring enterprise data security compliance.",
         "Lead development of AI-powered product suggestion modules and automated invoice synchronization workflows.",
         "Maintain 99.5% platform uptime SLAs through performance optimization and robust error-handling strategies.",
+        "Deployed TSSF HRMS to Google Play and Palmetto to the Apple App Store, guiding production releases through store submission requirements.",
         "Produce comprehensive technical documentation and deliver client training programs post-deployment.",
       ],
     },

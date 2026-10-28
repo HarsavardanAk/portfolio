@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import resume from "../data/resume";
 import "./Hero.css";
+import "./Deployments.css";
 import profileImage from "../assets/profile.jpg";
 
 export default function Hero() {
@@ -114,6 +115,12 @@ export default function Hero() {
             <span className="hero__meta-item">📍 {resume.location}</span>
             <span className="hero__meta-sep">·</span>
             <span className="hero__meta-item">🏢 Bonbloc</span>
+          </div>
+
+          <div className="hero__deployments animate-fadeUp" style={{ animationDelay: "0.7s" }}>
+            <span>Published apps</span>
+            <strong>Google Play: TSSF HRMS</strong>
+            <strong>App Store: Palmetto</strong>
           </div>
         </div>
 

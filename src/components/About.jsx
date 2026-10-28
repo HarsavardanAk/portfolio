@@ -4,6 +4,7 @@ import "./About.css";
 
 export default function About() {
   const highlights = [
+   { icon: "↗", label: "App Publishing", value: "Google Play & App Store" },
    { icon: "📱", label: "Flutter Development", value: "Mobile & Desktop Apps" },
 { icon: "⚙️", label: "State Management",   value: "GetX • BLoC • Provider" },
 { icon: "🔗", label: "API & ERP",          value: "REST APIs • NetSuite" },
