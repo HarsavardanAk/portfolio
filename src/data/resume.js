@@ -64,16 +64,18 @@ const resume = {
     {
       id: 2,
       title: "Atyab Al Marshoud",
-      subtitle: "POS & HRMS System",
+      subtitle: "POS, HRMS & Sales Reporting",
       period: "2025",
       company: "Bonbloc",
       category: "Enterprise",
-      tags: ["NetSuite ERP", "POS", "HRMS", "Desktop", "Mobile", "REST APIs"],
+      tags: ["NetSuite ERP", "POS", "HRMS", "Sales Reports", "Thermal Printing", "Wi-Fi Printing", "Desktop", "Mobile", "REST APIs"],
       color: "#0D47A1",
       description:
-        "Full digital ecosystem for a multi-location retail brand in the Gulf region — POS and HRMS systems integrated with NetSuite.",
+        "Full digital ecosystem for a multi-location retail brand in the Gulf region — POS, HRMS, and sales reporting apps integrated with NetSuite, including mobile receipt printing.",
       bullets: [
         "Full-featured POS system (Desktop & Mobile) integrated with NetSuite for real-time inventory, finance, and sales.",
+        "Mobile POS with built-in printer setup: connects to Wi-Fi thermal printers over the local network, saves the default printer, and prints formatted receipts directly from the app.",
+        "Sales Report application delivering daily, branch-wise, and item-level sales insights from NetSuite data for management decision-making.",
         "HRMS application integrated with NetSuite to automate employee records, payroll, and HR workflows.",
         "Scalable architecture supporting multi-branch operations and future business growth.",
       ],
@@ -186,8 +188,7 @@ const resume = {
       "Dart",
       "Java",
       "JavaScript",
-      "Python",
-      "PHP"
+      
     ],
   },
   {

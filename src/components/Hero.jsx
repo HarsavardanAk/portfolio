@@ -121,6 +121,7 @@ export default function Hero() {
             <span>Published apps</span>
             <strong>Google Play: TSSF HRMS</strong>
             <strong>App Store: Palmetto</strong>
+            <strong>App Store: AAM Sales App  , Mobile &amp; Desktop App</strong>
           </div>
         </div>
 
